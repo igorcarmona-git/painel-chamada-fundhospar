@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>FUNDHOSPAR</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <link href="./custom.css" rel="stylesheet">
+    <script src="lib/jquery-3.3.1.min.js"></script>
+    <script src="lib/scripts.js"></script>
+</head>
+<body class="bg-gray-400 flex">
+
+<!-- Conteúdo ocupando 50% da tela do lado esquerdo -->
+<div class="w-1/2 bg-gray-100">
+    <div class="flex items-center mb-4 mt-4">
+        <div class="mr-2 ml-6">
+            <img src="https://fundhospar.com.br/wp-content/uploads/2023/11/logo512x512.png" class="w-60 h-62">
+        </div>
+        <div class="mt-4">
+            <span class="block text-4xl font-custom font-bold text-center">FUNDHOSPAR - FUNDA&Ccedil;&Atilde;O HOSPITALAR DO PARAN&Aacute;</span>
+            <span class="block text-4xl mt-12 font-custom text-center">Atendimentos de Retorno de Ortopedia</span>
+            <span class="block text-4xl mt-4 font-custom font-extrabold text-center"><strong>Pronto Socorro</strong></span>
+        </div>
+    </div>
+
+    <div class="flex mt-8">
+        <div class="flex items-center mx-auto text-center backgroundSenha">
+            <div>
+                <span class="extraLarge font-custom">SENHA &nbsp;</span>
+            </div>
+            <div>
+                <span id="senhaAtualNumero" class="extraLarge font-bold backgroundSenhaInterna">0000</span>
+            </div>
+
+            <input type="hidden" id="senhaNormal" value="0000">
+            <input type="hidden" id="senhaPrioridade" value="P000">	
+        </div>
+    </div>
+
+    <div>
+        <div class="bg-ultima-senha">
+            <span class="text-4xl font-custom text-center font-bold">&Uacute;LTIMA CHAMADA</span>
+            <span class="text-4xl font-custom mx-auto mt-4 font-semibold">Senha </span>
+            <span id="ultimaSenhaNumero" class="text-4xl font-custom bg-white text-black font-bold w-1/2 mt-2 mx-auto text-center border rounded-3xl">0000</span>
+        </div>
+    </div>
+</div>
+
+<!-- Vídeo ocupando 50% da tela do lado direito -->
+<div class="w-1/2">
+    <iframe 
+    class="w-full h-screen"
+    src="https://www.youtube.com/embed/i5n9gcO28h8?si=rfJhSINMWZoteS5t" 
+    title="YouTube video player" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen>
+    </iframe>
+
+</div>
+
+<audio id="audioChamada" src="./audio/chamada.wav"></audio>
+
+</body>
+</html>
