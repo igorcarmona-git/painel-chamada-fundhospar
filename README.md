@@ -89,6 +89,7 @@ nano painel-senha
 ```
 
 Copiar e colar o código abaixo dentro do arquivo painel-senha:
+Certifique-se de que o firewall há regras permitindo o tráfego pela porta especificada.
 
 Observações:
 - **listen 80** (porta padrão http).
